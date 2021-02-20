@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    #padding {
+        padding: 25px;
+    }
+    .title {
+        text-align: center;
+        color: grey;
+        font-size: xx-large;
+    }
+    .header {
+        text-align: left;
+        font-size: x-large;
+    }
+    .paragraph {
+        text-align: left;
+        text-indent: 25px;
+        line-height: 2 ;
+        font-size: large;
+    }
+    .image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<h1 class="title">The Bachelor and the Gender Pay Gap</h1>
+<div id="padding">
+<p class="paragraph">Its <a href="https://www.aeaweb.org/articles?id=10.1257%2Fjel.20160995&source=post_page---------------------------">widley known</a> that <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.0950-0804.2005.00256.x?casa_token=bi8kWSdFNZEAAAAA%3ATSU--MzfK6rmVKpLtrXqhZ408loSKWJhdqYWlPKlIN2Fq6XZH-CYqmyX_ko5bNamEPONcuAHux5o7WRk">there is a gap</a> 
+    in the <a href ="https://www.americanprogress.org/issues/women/reports/2020/03/24/482141/quick-facts-gender-wage-gap/">mean income between men and women</a>. 
+    <a href="https://www.aauw.org/resources/research/simple-truth/">This gap</a> has been found 
+    to be the result of a complex series of factors, the specifics of which are not the focus of this peice. 
+    Rather, this document accepts the validity of the gener pay gap and examines the top 20 occupations 
+    from male and female contestants on the Bachelorette and the Bachelor to see if even a simple 
+    aggrigation of the Department of Labor's wage statistics and these occupations can illustrate this devide.
+</p>
+
+<br>
+
+<p class="header">For this analysis, I used these databases:</p>
+<ul class="paragraph">
+    <li><a href="https://www.kaggle.com/brianbgonz/the-bachelorette-contestants#__sid=js0">The Bachelor & Bechelorette Contestants Dataset on Kaggle</a></li>
+    <li><a href="https://www.bls.gov/oes/current/oes_nat.htm">The Bureau of Labor Statistics May 2019 national Occupational Employment and Wage Estimates</a></li>
+</ul>
+
+<br>
+
+<p class="paragraph">Using these databases I was able to aggrigate the occupational data of the contestants separated by gender. 
+    Then I isolated the top 20 occupations and used the BLS's database to match these occupations with their mean yearly income. 
+    From that point I was able to create these two visualizations where the annual mean salaries are compared to 
+    the number of contestants with said salary/occupation:
+</p>
+
+<br>
+
+<div class="image">
+    <h2>Male Contestants</h2>
+    <img src="maleContestants.png" alt="Male Contestant Chart">
+</div>
+
+<br>
+
+<div class="image">
+    <h2>Female Contestants</h2>
+    <img src="femaleContestants.png" alt="Male Contestant Chart">
+</div>
+
+<br>
+
+<p class="paragraph">After this initial batch of visualizations I pulled the dataframes back into Excel 
+    for some simple analysis. After multiplying each salary by the number of contestants with said salary, 
+    every salary was added to a total along with the total contestants from the table. Then the salary 
+    total was devided by the number of participants to find an average salary for said gender. The results 
+    of this analysis were also telling:
+</p>
+
+<br>
+
+<ul class="paragraph">
+    <li>The average salary for the top 20 most common occupations among male contestants was: <strong>$89,748.33</strong></li>
+    <li>The average salary for the top 20 most common occupations among female contestants was: <strong>$56662.98</strong></li>
+    <li><Strong>This created a difference of: 36.86%</Strong></li>
+</ul>
+
+<br>
+
+<p class="paragraph">With this data the message is clear, even the bachelor can't escape the systematic 
+    opressions of our current systems and in addition to this conclusion, the percent difference of this 
+    show's participants is worse then the aggriated paygap commonly sited in studies, the cause for which would have to 
+    be the product of more extensive analysis.
+</p>
+</div>
+</body>
+</html>
